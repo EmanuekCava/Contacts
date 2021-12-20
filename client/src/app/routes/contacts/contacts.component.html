@@ -1,0 +1,29 @@
+<div class="container-box-contacts">
+  <div class="container-contacts">
+    <div class="contact-keep">
+      <div class="contacts" (click)="getContacts(contact.id!)" *ngFor="let contact of contacts">
+        <h1 class="title-contact">{{contact.title}}</h1>
+        <p class="phone-contact">{{contact.phone}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-create">
+    <form (ngSumbit)="uploadContact()" class="form-contact">
+      <div class="separator">
+        <h2 class="amount-contacts">Amount of contacts: {{amount}}</h2>
+      </div>
+      <div class="separator">
+        <h2 class="title-create-contact">CREATE A CONTACT</h2>
+      </div>
+      <div class="separator">
+        <input type="text" name="name" [(ngModel)]="contact.title" class="input-contact" placeholder="CONTACT NAME">
+      </div>
+      <div class="separator">
+        <input type="text" name="phone" [(ngModel)]="contact.phone" class="input-contact" placeholder="PHONE NUMBER">
+      </div>
+      <div class="separator">
+        <button (click)="uploadContact()" class="button-create">CREATE</button>
+      </div>
+    </form>
+  </div>
+</div>

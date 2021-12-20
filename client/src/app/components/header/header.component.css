@@ -1,0 +1,13 @@
+.container-header {
+    height: 60px;
+    width: 100%;
+    background: #333;
+}
+.text-header {
+    display: inline;
+    color: #f00;
+    cursor: pointer;
+    font-weight: 900;
+    line-height: 60px;
+    margin-left: 42px;
+}

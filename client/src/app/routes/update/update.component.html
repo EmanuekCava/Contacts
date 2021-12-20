@@ -1,0 +1,16 @@
+<div class="container-form-update">
+  <form (ngSumbit)="update()" class="form-update">
+    <div class="separator">
+      <h1 class="title-update">UPDATE A CONTACT</h1>
+    </div>
+    <div class="separator">
+      <input type="text" name="title" value="{{contact.title}}" [(ngModel)]="contact.title" class="input-update" placeholder="NAME">
+    </div>
+    <div class="separator">
+      <input type="text" name="phone" value="{{contact.phone}}" [(ngModel)]="contact.phone" class="input-update" placeholder="PHONE">
+    </div>
+    <div class="separator">
+      <button (click)="update()" class="button-update">UPDATE</button>
+    </div>
+  </form>
+</div>
