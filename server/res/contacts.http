@@ -1,0 +1,28 @@
+@API = http://localhost:4300
+
+### CONTACTS
+GET {{API}}/contacts
+
+### CONTACT
+GET {{API}}/contacts/1
+
+### CREATE CONTACTS
+POST {{API}}/createcontacts
+Content-Type: application/json
+
+{
+    "title": "New Contact 2",
+    "phone": 1120203875
+}
+
+### REMOVE CONTACTS
+DELETE {{API}}/removecontacts/7
+
+### UPDATE CONTACTS
+PUT {{API}}/updatecontacts/7
+Content-Type: application/json
+
+{
+    "title": "Contact Updated",
+    "phone": 1133714592
+}
